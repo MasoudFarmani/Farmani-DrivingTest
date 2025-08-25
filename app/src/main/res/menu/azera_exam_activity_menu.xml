@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/examSetting"
+        android:icon="@drawable/azera_ic_setting"
+        android:title="@string/azera_setting"
+        app:iconTint="?android:textColorPrimary"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_exam_exit"
+        android:title="@string/exit" />
+
+</menu>

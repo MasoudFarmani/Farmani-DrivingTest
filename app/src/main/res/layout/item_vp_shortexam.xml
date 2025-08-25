@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Azera.CardView.Main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/shortExamTvNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="سوال شماره 32 :" />
+
+                    <TextView
+                        android:id="@+id/shortExamTvQuestion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/shortExamTvNumber"
+                        tools:text="این متن حاوی متن طولانی است که صورت سوال را مطرح می کند و کاربر باید به این سوال پاسخ دهد؟" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/shortExamBtnShowAnswer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:minHeight="64dp"
+                        android:text="@string/show_answer"
+                        android:tint="?colorSecondary"
+                        app:icon="@drawable/azera_ic_question_mark"
+                        app:layout_constraintBottom_toTopOf="@id/barrierBottom"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/shortExamTvQuestion" />
+
+                    <TextView
+                        android:id="@+id/shortExamTvAnswerLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/shortExam_tvLabel_answer"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/shortExamTvQuestion" />
+
+
+                    <TextView
+                        android:id="@+id/shortExamTvAnswer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/iran_sans"
+                        app:layout_constraintBottom_toTopOf="@id/shortExamBtnKnow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/shortExamTvAnswerLabel"
+                        tools:text="این متن حاوی پاسخ به پرسش بالا می باشد" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/shortExamBtnKnow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/shortExam_btnLabel_know"
+                        app:layout_constraintBottom_toTopOf="@id/dividerBottom"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/shortExamBtnNotKnow"
+                        app:layout_constraintTop_toBottomOf="@id/shortExamTvAnswer" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/shortExamBtnNotKnow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/shortExam_btnLabel_not_know"
+                        app:layout_constraintBottom_toBottomOf="@id/shortExamBtnKnow"
+                        app:layout_constraintEnd_toStartOf="@id/shortExamBtnKnow"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/shortExamBtnKnow" />
+
+                    <androidx.constraintlayout.widget.Group
+                        android:id="@+id/shortExamAnswerGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:constraint_referenced_ids="
+                        shortExamTvAnswer,
+                        shortExamTvAnswerLabel,
+                        shortExamBtnKnow,
+                        shortExamBtnNotKnow" />
+
+                    <View
+                        android:id="@+id/dividerBottom"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:alpha="0.18"
+                        android:background="?colorPrimary"
+                        app:layout_constraintBottom_toTopOf="@id/barrierBottom"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.constraintlayout.widget.Barrier
+                        android:id="@+id/barrierBottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:barrierDirection="top"
+                        app:constraint_referenced_ids="shortExamIbNote,
+                        shortExamIbShare,
+                        shortExamChbBookmark" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/shortExamIbNote"
+                        style="?borderlessButtonStyle"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/azera_ic_edit_outline"
+                        android:tint="?colorPrimary"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/barrierBottom" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/shortExamIbShare"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/azera_ic_share_outline"
+                        android:tint="?colorPrimary"
+                        app:layout_constraintBottom_toBottomOf="@id/shortExamIbNote"
+                        app:layout_constraintEnd_toStartOf="@id/shortExamChbBookmark"
+                        app:layout_constraintTop_toTopOf="@id/shortExamIbNote" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/shortExamChbBookmark"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:button="@drawable/azera_ic_bookmark_selector"
+                        android:text=""
+                        app:buttonTint="?colorPrimary"
+                        app:layout_constraintBottom_toBottomOf="@id/shortExamIbNote"
+                        app:layout_constraintEnd_toStartOf="@id/shortExamIbNote"
+                        app:layout_constraintTop_toTopOf="@id/shortExamIbNote" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Azera" parent="Base.Theme.Azera" >
+        <item name="android:navigationBarColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Azera.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+    </style>
+</resources>

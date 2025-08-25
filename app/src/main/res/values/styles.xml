@@ -1,0 +1,128 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Azera" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/azeraColorPrimary</item>
+        <item name="colorPrimaryDark">@color/azeraColorPrimaryDark</item>
+        <item name="colorSecondary">@color/azeraColorSecondary</item>
+        <item name="colorAccent">@color/azeraColorAccent</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+        <item name="fontFamily">@font/iran_sans</item>
+        <item name="snackbarStyle">@style/Widget.Azera.Snackbar</item>
+        <item name="snackbarButtonStyle">@style/Widget.Azera.Snackbar.ActionButton</item>
+        <item name="actionButtonStyle">@style/Azera.Widget.ActionButton</item>
+        <item name="homeAsUpIndicator">@drawable/azera_ic_up</item>
+        <item name="md_corner_radius">16dp</item>
+        <item name="md_font_body">@font/iran_sans</item>
+    </style>
+
+    <style name="Theme.Azera" parent="Base.Theme.Azera" />
+
+    <style name="Theme.Azera.Launcher">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <style name="Base.Widget.Azera.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Azera.Toolbar.Title</item>
+        <item name="android:theme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.MaterialComponents.Light</item>
+    </style>
+
+    <style name="Widget.Azera.Toolbar" parent="Base.Widget.Azera.Toolbar" />
+
+    <style name="Widget.Azera.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="android:listDivider">?colorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Azera.Caption" parent="TextAppearance.MaterialComponents.Caption" />
+
+    <style name="Widget.Azera.TextView.Prompt" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:text">موردی یافت نشد!</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline4
+        </item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Widget.Azera.Snackbar" parent="Widget.MaterialComponents.Snackbar.FullWidth">
+        <item name="animationMode">fade</item>
+        <item name="android:background">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="Widget.Azera.Snackbar.ActionButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/iran_sans</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+    <style name="TextAppearance.Azera.Toolbar.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--مقدار فاصله آیکونِ آیتم های منو در تولبار رو با کنار صفحه زیاد کردم-->
+    <style name="Azera.Widget.ActionButton" parent="Widget.AppCompat.ActionButton">
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+    <!--No way to set font-family for WheelPicker here! Done in code-->
+    <style name="Widget.Azera.WheelPicker" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="wheel_atmospheric">true</item>
+        <item name="wheel_curved">true</item>
+        <item name="wheel_cyclic">true</item>
+        <item name="wheel_selected_item_text_color">?attr/colorAccent</item>
+        <item name="wheel_item_text_size">@dimen/azera_wheel_picker_normal_text_size</item>
+        <item name="wheel_visible_item_count">3</item>
+    </style>
+
+    <style name="Widget.Azera.CardView.Main" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_margin">16dp</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="strokeWidth">@dimen/azera_card_stroke_width</item>
+        <item name="cardCornerRadius">8dp</item>
+    </style>
+
+    <style name="Widget.Azera.Chip.Filter" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="android:textAppearance">@style/TextAppearance.Azera.Chip</item>
+        <item name="chipBackgroundColor">@color/azera_mtrl_chip_background_color</item>
+        <item name="chipStrokeWidth">2dp</item>
+        <item name="chipStrokeColor">?colorPrimary</item>
+    </style>
+
+    <style name="Widget.Azera.Chip.Entry" parent="Widget.MaterialComponents.Chip.Entry">
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="android:textAppearance">@style/TextAppearance.Azera.Chip</item>
+    </style>
+
+    <style name="TextAppearance.Azera.Chip" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">@font/iran_sans</item>
+        <item name="fontFamily">@font/iran_sans</item>
+    </style>
+
+
+    <style name="AzeraShapeAppearance.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="PurchaseActivityTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="MyFancyShowCaseViewTitleStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">200dp</item>
+        <item name="android:textColor">#00ff00</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+</resources>

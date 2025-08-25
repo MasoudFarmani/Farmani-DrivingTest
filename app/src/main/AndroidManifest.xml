@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="farmani.masoud.app.traffic_regu_iab">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+
+    <application
+        android:name=".application.App"
+        android:allowBackup="false"
+        android:screenOrientation="portrait"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/azr_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Azera.Launcher"
+        tools:replace="android:allowBackup,android:label">
+        <activity
+            android:name="ir.tapsell.sdk.TapsellAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.ExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LearnRoadSignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ShortExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.ExamReviewActivity" />
+        <activity android:name=".ui.activity.PurchaseActivity" />
+        <activity android:name=".ui.activity.AboutMeActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/screenshot_path" />
+        </provider>
+    </application>
+
+</manifest>

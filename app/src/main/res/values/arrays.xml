@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="why_to_purchase">
+        <item>حمایت از توسعه دهنده برای ادامه مسیرِ بروزرسانی برنامه</item>
+        <item>حذف تبلیغات</item>
+        <item>دسترسی به تمامِ آزمون ها</item>
+        <item>دسترسی کامل به سوالات فشرده جامع</item>
+        <item>دسترسی کامل به آموزش تابلوها</item>
+        <item>دسترسی کامل به سوالات فشرده فنی</item>
+        <item>امکان استفاده نامحدود از بخشِ حدس تابلو</item>
+        <item>امکان استفاده نامحدود از بخشِ تمرکز و تابلو</item>
+        <item>امکان استفاده از پشتیبانی تلگرام</item>
+    </string-array>
+
+    <integer-array name="why_to_purchase_drawables">
+        <item>@drawable/ic_programmer</item>
+        <item>@drawable/ic_ad</item>
+        <item>@drawable/ic_test1</item>
+        <item>@drawable/ic_compressed</item>
+        <item>@drawable/ic_sign_learn</item>
+        <item>@drawable/ic_compressed</item>
+        <item>@drawable/ic_sign_guess</item>
+        <item>@drawable/ic_sign_focus</item>
+        <item>@drawable/ic_telegram</item>
+    </integer-array>
+
+
+    <!--sku-list of my unsuccessful project that some users
+    purchased. if any user has purchased any of these items
+    full_version must be activated for them-->
+    <string-array name="azera_sku_list">
+        <item>elementary_</item>
+        <item>main_</item>
+        <item>technical_</item>
+        <item>elementary_main_</item>
+        <item>elementary_technical_</item>
+        <item>main_technical_</item>
+        <item>all_quiz</item>
+    </string-array>
+
+</resources>

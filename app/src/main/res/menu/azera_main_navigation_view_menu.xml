@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/navGroupApp">
+        <item
+            android:id="@+id/navItemPurchaseGuide"
+            android:icon="@drawable/azera_ic_shopping_cart"
+            android:title="@string/navItemPurchaseGuide" />
+        <item
+            android:id="@+id/navItemSupport"
+            android:icon="@drawable/azera_ic_telegram"
+            android:title="@string/navItemSupport" />
+        <item
+            android:id="@+id/navItemRate"
+            android:icon="@drawable/azera_ic_comment"
+            android:title="@string/navItemRate" />
+        <item
+            android:id="@+id/navItemSuggestToFriends"
+            android:icon="@drawable/azera_ic_bookmark_outline"
+            android:title="@string/navItemSuggestToFriends" />
+        <item
+            android:id="@+id/navItemAboutMe"
+            android:icon="@drawable/ic_user"
+            android:title="درباره من" />
+    </group>
+
+</menu>

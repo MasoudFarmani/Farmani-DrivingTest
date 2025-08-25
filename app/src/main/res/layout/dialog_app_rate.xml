@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/rateDialogIvAppIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/e45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialogRateTvTitle"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/dialogRateTvTitle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:text="@string/dialog_rate_title"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="?colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rateDialogTvMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/dialog_rate_message"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rateDialogIvAppIcon" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/rateDialogBtnLater"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/rate_dialog_btn_later"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rateDialogBtnNever"
+        app:layout_constraintTop_toBottomOf="@+id/rateDialogRatingBar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/rateDialogBtnNever"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:alpha="0.5"
+        android:text="@string/rate_dialog_btn_never"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/rateDialogBtnLater"
+        app:layout_constraintEnd_toStartOf="@id/rateDialogBtnLater"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rateDialogBtnLater" />
+
+    <com.willy.ratingbar.RotationRatingBar
+        android:id="@+id/rateDialogRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rateDialogTvMessage"
+        app:srb_clearRatingEnabled="true"
+        app:srb_numStars="5"
+        app:srb_starPadding="5dp"
+        app:srb_stepSize="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

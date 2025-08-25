@@ -1,0 +1,77 @@
+<resources>
+    <string name="dialog_ad_prompt">
+        برای شرکت در این آزمون میتونی یه تبلیغ ویدیویی ببینی.
+        برای دسترسی همیشگی به همه آزمون ها باید نسخه کامل رو خریداری کنی.
+    </string>
+    <string name="azr_app_name">آیین نامه رانندگی فرمانی</string>
+    <string name="tab_item_learn">آموزش</string>
+    <string name="tab_item_questionanswer">پیش آزمون</string>
+    <string name="tab_item_exam">آزمون</string>
+    <string name="search">جستجو</string>
+    <string name="format_chronometer">%1$02d : %2$02d</string>
+    <string name="cafe_bazaar_app_link_title">اپلیکیشن آیین نامه رانندگی فرمانی رو از کافه بازار دانلود کن : </string>
+    <string name="cafe_bazaar_app_link_url"> \n http://cafebazaar.ir/app/?id=farmani.masoud.app.traffic_regu_iab&amp;ref=share</string>
+    <string name="menu_item_exam_finish">پایان آزمون</string>
+    <string name="main_menu_button_start_label">شروع</string>
+
+    <string name="exam_status_white">پاسخ ندادید!</string>
+    <string name="exam_status_correct">پاسخ درست دادید</string>
+    <string name="exam_status_wrong">پاسخ غلط دادید!</string>
+    <string name="exam_snackbar_pause_msg">زمان آزمون متوقف شده است!</string>
+    <string name="exam_snackbar_resume_msg">ادامه آزمون …</string>
+    <string name="exam_snackbar_finish_msg">زمان آزمون به پایان رسید!!</string>
+    <string name="exam_snackbar_finish_action">مشاهده نتیجه</string>
+    <string name="exam_result_chart_label_white">پاسخ نداده</string>
+    <string name="exam_result_chart_label_wrong">غلط</string>
+    <string name="exam_result_chart_label_correct">درست</string>
+    <string name="exam_result_chart_label">نتیجه آزمون شما</string>
+    <string name="exam_result_message_passed">آفرین! اگه همینجوری ادامه بدی حتما قبولی</string>
+    <string name="exam_result_message_failed">به %1$d سوال دیگه جواب درست میدادی قبول بودی!!</string>
+    <string name="exam_result_message_failed_prompt_minimum">برای قبولی باید به حداقل %1$d سوال پاسخ درست بدی!</string>
+    <string name="exam_result_status_passed">قبول</string>
+    <string name="exam_result_status_failed">مردود</string>
+    <string name="shortExam_btnLabel_know">بلد بودم</string>
+    <string name="shortExam_btnLabel_not_know">بلد نبودم</string>
+    <string name="shortExam_tvLabel_answer">پاسخ :</string>
+
+    <string name="azera_road_sign_toolbar_title">آموزش تابلوها</string>
+    <string name="azera_auto_page">ورق زدن خودکار</string>
+    <string name="azera_setting">تنظیمات</string>
+    <string name="azera_learn_road_sign_chip_label">یاد گرفتم</string>
+    <string name="azera_btn_review_label">مرور</string>
+    <string name="exit">خروج</string>
+    <string name="show_answer">نمایش پاسخ</string>
+    <string name="azera_btn_label_show_exam_answer">مشاهده پاسخ سوالات</string>
+
+    <string name="RSA1">kWRGXTsefHi+U3md8BLNzz4SbDNzZ9HH</string>
+    <string name="RSA2">FPuXbAOebJArfjAy9PkOM+jgFpHlpoGUVMvnUtVcQp</string>
+    <string name="RSA3">G7ADCBtwKBrwDgQCcEDwCckszsvu+9</string>
+    <string name="RSA4">+hWcJj7wptqnGx6zfkKeNQIYgIBTo42dUVLTTA1X7bxpECAwEAAQ==</string>
+    <string name="RSA5">mIHNmA8GCSqGSIb3DQEBAQUAA4</string>
+    <string name="RSA6">o4UT7veQM2+HEMJl94DYfAb3s5tpSlYt19FnIEg7Sg</string>
+    <string name="RSA7">AcnxSk2Rgv7EazdPQSqOTqW86cen+zQfoR/h4ZsBBVGBAf9BL6evDt</string>
+    <string name="refresh">بارگذاری مجدد</string>
+    <string name="azera_purchase_details_loading">در حال دریافت اطلاعات پرداخت از کافه بازار، لطفا منتظر باشید…</string>
+    <string name="azera_purchase_btn_label">پرداخت از طریق کافه بازار</string>
+    <string name="navItemGuessGame">حدس تابلو</string>
+    <string name="navItemFocusGame">تمرکز و تابلو</string>
+    <string name="navItemPurchaseGuide">راهنمای خرید</string>
+    <string name="navItemSupport">تلگرام پشتیبانی</string>
+    <string name="navItemRate">نظرت درباره برنامه</string>
+    <string name="navItemSuggestToFriends">پیشنهاد به دوستان</string>
+    <string name="KEY_RATE">Rated:</string>
+    <string name="telegram_support_id">AzeraTelegramSupport</string>
+    <string name="examMainTitle">آزمون اصلی</string>
+    <string name="examElementaryTitle">آزمون مقدماتی</string>
+    <string name="examTechnicalTitle">آزمون فنی</string>
+    <string name="dialog_rate_message">لطفا ۳۰ ثانیه وقت بذارید و نظرتون رو درباره برنامه بهمون بگید</string>
+    <string name="dialog_rate_title">امتیاز به برنامه</string>
+    <string name="rate_dialog_btn_never">نمیخوام بگم!</string>
+    <string name="rate_dialog_btn_later">الان نه!</string>
+    <string name="dialog_send_feedback_title">ارسال بازخورد</string>
+    <string name="dialog_send_feedback_hint">چه مشکلی پیش اومده؟ برطرفش میکنیم</string>
+    <string name="dialog_send_feedback_btn_email">ارسال از طریق ایمیل</string>
+    <string name="dialog_send_feedback_btn_telegram">ارسال به پشتیبانی تلگرام</string>
+    <string name="email_address">developers.bluebyte@gmail.com</string>
+    <string name="fragment_main_menu_prompt">با چرخاندن گزینه ها، آیتم مورد نظر رو انتخاب کنید</string>
+</resources>

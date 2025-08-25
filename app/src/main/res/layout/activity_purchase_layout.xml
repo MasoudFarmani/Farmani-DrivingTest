@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimary">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/purchaseAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/purchaseToolbar"
+            style="@style/Widget.Azera.Toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchaseAppbar"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="چرا نسخه کامل؟!"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textColor="#fff" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnPurchase"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv1"
+                style="@style/PurchaseActivityTextView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv2"
+                style="@style/PurchaseActivityTextView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv3"
+                style="@style/PurchaseActivityTextView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv4"
+                style="@style/PurchaseActivityTextView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv5"
+                style="@style/PurchaseActivityTextView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv6"
+                style="@style/PurchaseActivityTextView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv7"
+                style="@style/PurchaseActivityTextView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv8"
+                style="@style/PurchaseActivityTextView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv9"
+                style="@style/PurchaseActivityTextView" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPurchase"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:drawablePadding="16dp"
+        android:padding="8dp"
+        android:text="خرید از بازار"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:backgroundTint="?colorAccent"
+        app:icon="@drawable/bazar_logo"
+        app:iconGravity="textStart" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progressLoading"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="false"
+        android:visibility="visible" />
+
+</RelativeLayout>

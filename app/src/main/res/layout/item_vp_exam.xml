@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/examCardWrapper"
+                style="@style/Widget.Azera.CardView.Main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/questionTvStatus"
+                        style="?borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:minWidth="48dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="به این سوال پاسخ صحیح دادید" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/examTvQuestion"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:layout_width="0dp"
+                        android:layout_margin="6dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/questionTvStatus"
+                        tools:text="این متن حاوی یک رشته طولانی است که سوالی را از کاربر می پرسد؟" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/examIvQuestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/examTvQuestion"
+                        tools:src="@drawable/i13" />
+
+                    <RadioGroup
+                        android:id="@+id/examRgAnswers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:padding="4dp"
+                        android:layoutDirection="rtl"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@id/dividerBottom"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/examIvQuestion">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/examRbAnswer1"
+                            style="@style/TextAppearance.MaterialComponents.Body2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="این متن حاوی متن گزینه شماره 1 است" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/examRbAnswer2"
+                            style="@style/TextAppearance.MaterialComponents.Body2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="این متن حاوی متن گزینه شماره 2 است" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/examRbAnswer3"
+                            style="@style/TextAppearance.MaterialComponents.Body2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="این متن حاوی متن گزینه شماره 3 است" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/examRbAnswer4"
+                            style="@style/TextAppearance.MaterialComponents.Body2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="این متن حاوی متن گزینه شماره 4 است" />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/dividerBottom"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:alpha=".5"
+                        android:background="@drawable/azera_bg_dotted"
+                        android:layerType="software"
+                        app:layout_constraintBottom_toTopOf="@id/barrierBottom"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.constraintlayout.widget.Barrier
+                        android:id="@+id/barrierBottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:barrierDirection="top"
+                        app:constraint_referenced_ids="examIbNote,examChbBookmark,examIbShare" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/examIbNote"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:src="@drawable/azera_ic_edit_outline"
+                        android:tint="?colorPrimary"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/examChbBookmark"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:button="@drawable/azera_ic_bookmark_selector"
+                        android:text=""
+                        app:buttonTint="?colorPrimary"
+                        app:layout_constraintBottom_toBottomOf="@id/examIbNote"
+                        app:layout_constraintEnd_toStartOf="@id/examIbNote"
+                        app:layout_constraintTop_toTopOf="@id/examIbNote" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/examIbShare"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/azera_ic_share_outline"
+                        android:tint="?colorPrimary"
+                        app:layout_constraintBottom_toBottomOf="@id/examIbNote"
+                        app:layout_constraintEnd_toStartOf="@id/examChbBookmark"
+                        app:layout_constraintTop_toTopOf="@id/examIbNote" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

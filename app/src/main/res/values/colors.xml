@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Theme colors-->
+    <color name="azeraColorPrimary">#9C27B0</color>
+    <color name="azeraColorPrimaryDark">#6A1B9A</color>
+    <color name="azeraColorSecondary">#2196F3</color>
+    <color name="azeraColorAccent">#FF5722</color>
+    <!--View colors-->
+    <color name="colorPrimary60">#969C27B0</color>
+    <color name="azeraColorGreen">#4CAF50</color>
+    <color name="azeraColorGreen60">#994CAF50</color>
+    <color name="azeraColorYellow">#FFC107</color>
+    <color name="azeraColorRed">#f44336</color>
+    <color name="azeraColorRed60">#99f44336</color>
+    <color name="azeraColorGray">#BDBDBD</color>
+    <color name="azeraColorGray60">#99BDBDBD</color>
+    <color name="azeraColorGray1">#FAFAFA</color>
+    <color name="azeraColorGray2">#EEEEEE</color>
+    <color name="azeraColorGray0">#E0E0E0</color>
+</resources>
