@@ -4,8 +4,8 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 36
-    buildToolsVersion "30.0.2"
-
+    buildToolsVersion '36.0.0 rc1'
+    namespace 'farmani.masoud.app.traffic_regu_iab'
     defaultConfig {
         applicationId "farmani.masoud.app.traffic_regu_iab"
         minSdkVersion 15
